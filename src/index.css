@@ -1,0 +1,399 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+}
+
+/* -------------------------------------------------------------- */
+/* Sidebar */
+
+@media only screen and (min-width: 767.3px) {
+  .navbar {
+    margin: auto;
+    position: fixed;
+    z-index: 100;
+  }
+}
+
+@media only screen and (max-width: 767.3px) {
+  .sidebar-container {
+    top: 0;
+    position: fixed;
+    z-index: 100;
+  }
+
+  .content {
+    margin-top: 150px;
+  }
+}
+
+.portfolio-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.sidebar {
+  padding: 40px 20px;
+}
+
+.title {
+  font-size: 12px;
+}
+
+.nav-link {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: relative;
+  width: fit-content;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #68b2ef;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s;
+}
+
+.active {
+  color: #68b2ef !important;
+}
+
+.nav-link:hover::after {
+  width: 65%;
+}
+/* ---------------------------------------------------------------------- */
+/* Home */
+.carousel-item {
+  padding: 15% 15%;
+}
+
+.carousel-item h2 {
+  font-size: 60px;
+}
+
+.carousel-inner .item1 {
+  background-image: url("assets/img_bg_1-PzvG2r05.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.carousel-inner .item2 {
+  background-image: url("assets/img_bg_2-DzCs5o-0.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.home-btn {
+  font-size: 12px;
+  letter-spacing: 2px;
+  border-width: 1px;
+  margin-top: 20px;
+  background-color: transparent;
+}
+
+/* ---------------------------------------------------------------------- */
+/* About */
+.content {
+  width: 68%;
+}
+
+.page-title {
+  letter-spacing: 5px;
+  font-size: 10px;
+  color: rgb(159, 159, 159);
+}
+
+.page-headline {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.description {
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.feature {
+  padding: 20px 20px 50px;
+  box-shadow: 0px 0px 40px 1px rgb(222, 222, 222);
+}
+
+.feature-name {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400 !important;
+  font-size: 17px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Skills */
+.progress-title {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  height: 6px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(236, 236, 236);
+  overflow: visible;
+}
+
+.progress-bar .photoshop {
+  width: 75%;
+  background-color: rgb(44, 152, 240);
+}
+
+.progress-bar .html {
+  width: 85%;
+  background-color: rgb(249, 191, 63);
+}
+
+.progress-bar .wordpress {
+  width: 70%;
+  background-color: rgb(47, 164, 153);
+}
+
+.progress-bar .jquery {
+  width: 60%;
+  background-color: rgb(236, 84, 83);
+}
+
+.progress-bar .css {
+  width: 90%;
+  background-color: rgb(168, 76, 184);
+}
+
+.progress-bar .seo {
+  width: 80%;
+  background-color: rgb(64, 84, 178);
+}
+
+.progress {
+  position: relative;
+  overflow: visible;
+}
+
+.progress::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.progress::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  right: 0;
+}
+
+.photoshop::before {
+  content: "75%";
+  color: rgb(44, 152, 240);
+  font-weight: 600;
+}
+
+.photoshop::after {
+  background-color: rgb(44, 152, 240);
+}
+
+.html::before {
+  content: "85%";
+  color: rgb(249, 191, 63);
+  font-weight: 600;
+}
+
+.html::after {
+  background-color: rgb(249, 191, 63);
+}
+
+.wordpress::before {
+  content: "70%";
+  color: rgb(47, 164, 153);
+  font-weight: 600;
+}
+
+.wordpress::after {
+  background-color: rgb(47, 164, 153);
+}
+
+.jquery::before {
+  content: "60%";
+  color: rgb(236, 84, 83);
+  font-weight: 600;
+}
+
+.jquery::after {
+  background-color: rgb(236, 84, 83);
+}
+
+.css::before {
+  content: "90%";
+  color: rgb(168, 76, 184);
+  font-weight: 600;
+}
+
+.css::after {
+  background-color: rgb(168, 76, 184);
+}
+
+.seo::before {
+  content: "80%";
+  color: rgb(64, 84, 178);
+  font-weight: 600;
+}
+
+.seo::after {
+  background-color: rgb(64, 84, 178);
+}
+
+/* ---------------------------------------------------------------------- */
+/* Experience */
+
+.experiences-container {
+  border-left: 3px solid rgb(242, 243, 247);
+}
+
+.experiences-container li::marker {
+  color: white;
+}
+
+.exp-icon {
+  width: 60px;
+  height: 60px;
+  border: 4px solid rgb(242, 243, 247);
+  top: 25px;
+  left: -57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exp-icon i {
+  font-size: 16px;
+  color: #fff;
+}
+
+.arrow {
+  color: rgb(242, 243, 247);
+  font-size: 50px;
+  left: 4px;
+  top: 30px;
+}
+
+.exp-content {
+  background-color: rgb(242, 243, 247);
+  left: 19px;
+  top: 20px;
+}
+
+.exp-content h5,
+.exp-content p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+.exp-content p {
+  color: rgb(72, 72, 74);
+  font-weight: 300;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Work */
+
+.image-content {
+  height: 400px;
+}
+
+.image-content {
+  background-position: -80px;
+  background-size: cover;
+}
+
+.work-img1 {
+  background-image: url("assets/img-1-C4nS0eD8.jpg");
+}
+
+.work-img2 {
+  background-image: url("assets/img-2-D-4H1m4L.jpg");
+}
+
+.work-img3 {
+  background-image: url("assets/img-3-pR2ZEVY9.jpg");
+}
+
+.work-img4 {
+  background-image: url("assets/img-4-tHccITd-.jpg");
+}
+
+.work-img5 {
+  background-image: url("assets/img-5-lAucr__a.jpg");
+}
+
+.work-img6 {
+  background-image: url("assets/img-6-DFW03AZ3.jpg");
+}
+
+.show-btn {
+  transition: 0.3s;
+}
+
+.show-btn:hover {
+  background-color: rgb(16, 86, 191) !important;
+}
+
+.work-overlay {
+  background-color: #2793eb;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.work-icons {
+  margin-top: 40%;
+}
+
+.work-icon {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.num {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.work-overlay:hover {
+  opacity: 1;
+}
+
+.not-found {
+  background-image: url("assets/error.jpg");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
